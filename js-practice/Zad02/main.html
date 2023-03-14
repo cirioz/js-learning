@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Zad02</title>
+</head>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript">
+function fibbonachi(n)
+{
+    var prev = 0
+    var sum = 1;
+    for(var i = 0; i < n; i++)
+    {
+        var old = prev;
+        prev = sum;
+        sum = sum + old;
+    }
+    return sum;
+}
+// u konzoli imas 3 variable sa ovim imenima
+let fib3 = fibbonachi(3);
+let fib5 = fibbonachi(5);
+let fib10 = fibbonachi(10);
+</script>
+<body>
+<p>Otvori <i>Console</i> tab u <b>Inspector</b>-u</p>
+</body>
+</html>

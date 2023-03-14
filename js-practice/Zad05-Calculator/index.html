@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            td
+            {
+                width: 30px;
+                height: 30px;
+            }
+            button
+            {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="main.js" defer></script>
+
+        <h1>
+            Calculator
+        </h1>
+
+        <table>
+            <!-- results -->
+            <tr style="height: 50px; font-size: 36px; text-align: right;" >
+                <td colspan="6" id="result">
+                    
+                </td>
+            </tr>
+            <!-- input -->
+            <tr>
+                <td colspan="6">
+                    <input readonly="true" id="input" type="text" style="width: 100%; padding: 0;">
+                </td>
+            </tr>
+            <!-- buttons, row 1-->
+            <tr>
+                <td>
+                    <button onclick="simpleWrite(7)">7</button>
+                </td>
+                <td>
+                    <button onclick="simpleWrite(8)">8</button>
+                </td>
+                <td>
+                    <button onclick="simpleWrite(9)">9</button>
+                </td>
+                <td>
+                    <button onclick="mathOperation('/')">/</button>
+                </td>
+                <td>
+                    <button>&#8630;</button>
+                </td>
+                <td>
+                    <button onclick="resetCalc()">C</button>
+                </td>
+            </tr>
+            <!-- buttons, row 2 -->
+            <tr>
+                <td>
+                    <button onclick="simpleWrite(4)">4</button>
+                </td>
+                <td>
+                    <button onclick="simpleWrite(5)">5</button>
+                </td>
+                <td>
+                    <button onclick="simpleWrite(6)">6</button>
+                </td>
+                <td>
+                    <button onclick="mathOperation('*')">x</button>
+                </td>
+                <td>
+                    <button>(</button>
+                </td>
+                <td>
+                    <button>)</button>
+                </td>
+            </tr>
+            <!-- buttons, row 3 -->
+            <tr>
+                <td>
+                    <button onclick="simpleWrite(1)">1</button>
+                </td>
+                <td>
+                    <button onclick="simpleWrite(2)">2</button>
+                </td>
+                <td>
+                    <button onclick="simpleWrite(3)">3</button>
+                </td>
+                <td>
+                    <button onclick="mathOperation('-')">-</button>
+                </td>
+                <td>
+                    <button>x<sup>2</sup></button>
+                </td>
+                <td>
+                    <button>&#8730;</button>
+                </td>
+            </tr>
+            <!-- buttons, row 4 -->
+            <tr>
+                <td>
+                    <button onclick="simpleWrite(0)">0</button>
+                </td>
+                <td>
+                    <button onclick="simpleWrite('.')">.</button>
+                </td>
+                <td>
+                    <button>%</button>
+                </td>
+                <td>
+                    <button onclick="mathOperation('+')">+</button>
+                </td>
+                <td colspan="2">
+                    <button onclick="equalsButton()">=</button>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

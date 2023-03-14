@@ -1,0 +1,427 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* background-color: #0A0A0A; */
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  display: inline-block;
+  /* background-image:url('objekt.png'); */
+  background-color: #0a0a0a;
+  /* width: 100%;
+  height: 100%; */
+  /* background-size: cover; */
+  /* background-color: transparent; */
+  /* position: relative;
+height: 33%;
+    width: 33%; */
+  /* overflow: hidden; */
+  /* background-position: right -200px bottom -390px;
+background-repeat: no-repeat; */
+  /* background-position: center center; */
+  /* background-repeat: no-repeat; */
+  /* background-attachment: fixed ; */
+  /* background-size: 120%; */
+  /* width: 400px;
+  height: 600px; */
+}
+
+.bodydiv {
+  display: flex;
+  background-image: url("objekt.png");
+  /* background-position: right -600px bottom -690px; */
+  background-repeat: no-repeat;
+  background-size: 100%;
+  /* background-color: transparent;
+  position: absolute;
+width: 1920px;
+height: 1080px;
+top: 16%;
+left: -12%;
+overflow:visible; */
+
+  /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  height: 100%; /* strech it to screen height, to be same height as parent aka body, which we set to 100vh
+  /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  /* overflow: none; */
+  margin: 0 0 100px;
+  min-height: 100vh;
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+  max-height: 100vh; /* Body will alway be the same height as the screen, and we will do scrolling and other manipulations on child elements */
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+}
+
+.bodydiv {
+  display: flex;
+  flex-direction: column;
+}
+
+li,
+a,
+button {
+  font-family: "Assistant", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.logodiv {
+  display: flex;
+  border-right: 1px solid #333;
+  /* border-bottom: 1px solid #333; */
+  width: 138px;
+  max-width: 140px;
+  min-width: 140px;
+  height: 117px;
+  align-items: center;
+  justify-content: center;
+}
+
+.logodiv a {
+  display: flex;
+}
+
+.flexbox-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: auto;
+  /* flex: 1; */
+  height: -117px; /* delete this */
+
+  /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  height: 100%; /* Because the parent is flex, so this will just strech to fit the parent, and with header and footer with pixel heights this will take all that is left (flex specific height behaviour) */
+  /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+}
+
+.flexbox-item {
+  width: 200px;
+  height: 207px;
+  margin: 0;
+  border: 1px solid #333;
+  background: transparent;
+}
+
+.flexbox-item-1 {
+  min-height: 100px;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  border: 0;
+}
+
+.bgdiv1_1 {
+  width: 140px;
+  max-width: 140px;
+  min-width: 140px;
+  height: 207px;
+  min-height: 207px;
+  max-height: 207px;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+  border-top: 1px solid #333;
+  background: black;
+  opacity: 0.5;
+}
+
+.bgdiv1_2 {
+  width: 536px;
+  min-width: 536px;
+  max-width: 536px;
+  min-height: 207px;
+  max-height: 207px;
+  height: 207px;
+  /* border-left: 1px solid #707070; */
+  border-bottom: 1px solid #333;
+  border-right: 1px solid #333;
+  border-top: 1px solid #333;
+  text-align: left;
+  background: transparent;
+  color: white;
+  opacity: 0.5;
+}
+
+.bgdiv1_2 h1 {
+  font-family: "Assistant", sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  text-align: left;
+  padding: 25px;
+}
+
+.bgdiv1_3 {
+  width: 1226px;
+  max-width: 1226px;
+  height: 207px;
+  max-height: 207px;
+  min-height: 100px;
+  border-bottom: 1px solid #333;
+  background: transparent;
+  border-top: 1px solid #333;
+}
+
+.flexbox-item-2 {
+  /* DELETE THIS */
+  /* max-height: 459px; */
+  /* min-height: 320px; */
+  /* height: 440px; */
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  background: transparent;
+  border: 0;
+  height: 100%; /* this is the same trick as we did with .flexbox-container */
+}
+
+.bgdiv2_1 {
+  width: 140px;
+  min-width: 140px;
+  max-width: 140px;
+  height: auto;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+  background: transparent;
+}
+
+.bgdiv2_2 {
+  width: 536px;
+  min-width: 536px;
+  max-width: 536px;
+  height: auto;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+  text-align: center;
+  background: transparent;
+}
+
+.bgdiv2_3 {
+  width: 1226px;
+  max-width: 1226px;
+  height: auto;
+  border-bottom: 1px solid #333;
+  background: transparent;
+}
+
+.flexbox-item-3 {
+  height: 181px;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  background: transparent;
+  border: 0;
+}
+
+.bgdiv3_1 {
+  width: 140px;
+  min-width: 140px;
+  max-width: 140px;
+  height: 181px;
+  border-right: 1px solid #333;
+  /* border-bottom: 1px solid #333; */
+  background: transparent;
+}
+
+.bgdiv3_2 {
+  width: 536px;
+  min-width: 536px;
+  max-width: 536px;
+  height: 181px;
+  border-right: 1px solid #333;
+  /* border-bottom: 1px solid #333; */
+  text-align: center;
+  background: black;
+}
+
+.bgdiv3_2 p {
+  display: flex;
+  font-family: "Assistant", sans-serif;
+  font-weight: 300;
+  font-size: 33px;
+  align-items: baseline;
+  justify-content: center;
+  text-align: left;
+  padding-top: 40px;
+  color: white;
+}
+
+.bgdiv3_3 {
+  width: 985px;
+  max-width: 985px;
+  height: 181px;
+  background: transparent;
+}
+
+.bgdiv3_4 {
+  width: 241px;
+  min-width: 241px;
+  max-width: 241px;
+  height: 181px;
+  border-left: 1px solid #333;
+  background: black;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bgdiv3_4 p {
+  display: flex;
+  font-family: "Assistant", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  align-items: baseline;
+  justify-content: center;
+  text-align: left;
+  padding-top: 69px;
+  color: white;
+}
+
+.bgdiv3_4 img {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  object-position: right bottom;
+}
+
+footer {
+  display: flex;
+  color: #333;
+  /* min-height: 117px; */
+  left: 0;
+  position: relative; //changed to relative from fixed also works if position is not there
+  font-size: small;
+  width: 100%;
+  border-top: 1px solid #333;
+  padding: 3em;
+  margin-top: auto;
+  background-color: black;
+  height: 117px;
+  bottom: 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 117px;
+  /* border-top: 1px solid #333; */
+  margin-top: auto;
+  position: absolute;
+
+  width: 100%;
+}
+
+.footerdiv {
+  display: flex;
+  justify-content: baseline;
+  padding-left: 20px;
+  color: white;
+  font-family: "Assistant", sans-serif;
+}
+
+.social {
+  display: flex;
+}
+
+.social__links {
+  list-style: none;
+  background-color: transparent;
+}
+
+.social__links li {
+  display: inline-block;
+  padding: 0px 20px;
+  background-color: transparent;
+}
+
+.social__links li a {
+  background-color: transparent;
+}
+
+.headerdiv a {
+  text-align: center;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+/* Kako napraviti one-page bez scroll-a, za razlicite browsere? Sajt treba da izgleda kako je dizajniran, ali bez scroll-a. Mozda treba da se smanje dimenzije elemenata sajta */
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+  margin: 50px;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+}
+
+.navdiv {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 35px 2%;
+  max-width: 1770px;
+  height: 117px;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+@media (max-width: ) {
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Skocko v0.1</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="game">
+            
+            <table>
+                <tr>
+                    <td style="width: 200px;">
+                        <p id="timer"></p>
+                    </td>
+                    <td>
+                        <button id="toggle-timer" onclick="toggleTimer()">Toggle timer</button>
+                    </td>
+                </tr>
+            </table>
+
+            <div id="turn01">
+                <img src="img/pitanje.png" id="t1e1" onclick="loadNextImage(this)">
+                <img src="img/pitanje.png" id="t1e2" onclick="loadNextImage(this)">
+                <img src="img/pitanje.png" id="t1e3" onclick="loadNextImage(this)">
+                <img src="img/pitanje.png" id="t1e4" onclick="loadNextImage(this)">
+            </div>
+            
+            <div id="turn02">
+                <img src="img/pitanje.png" id="t2e1" onclick="loadNextImage(this)">
+                <img src="img/pitanje.png" id="t2e2" onclick="loadNextImage(this)">
+                <img src="img/pitanje.png" id="t2e3" onclick="loadNextImage(this)">
+                <img src="img/pitanje.png" id="t2e4" onclick="loadNextImage(this)">
+            </div>
+            
+            <div id="turn03">
+                <img src="img/pitanje.png" id="t3e1" onclick="loadNextImage(this)">
+                <img src="img/pitanje.png" id="t3e2" onclick="loadNextImage(this)">
+                <img src="img/pitanje.png" id="t3e3" onclick="loadNextImage(this)">
+                <img src="img/pitanje.png" id="t3e4" onclick="loadNextImage(this)">
+            </div>
+            
+            <div id="turn04">
+                <img src="img/pitanje.png" id="t4e1" onclick="loadNextImage(this)">
+                <img src="img/pitanje.png" id="t4e2" onclick="loadNextImage(this)">
+                <img src="img/pitanje.png" id="t4e3" onclick="loadNextImage(this)">
+                <img src="img/pitanje.png" id="t4e4" onclick="loadNextImage(this)">
+            </div>
+            
+            <div id="turn05">
+                <img src="img/pitanje.png" id="t5e1" onclick="loadNextImage(this)">
+                <img src="img/pitanje.png" id="t5e2" onclick="loadNextImage(this)">
+                <img src="img/pitanje.png" id="t5e3" onclick="loadNextImage(this)">
+                <img src="img/pitanje.png" id="t5e4" onclick="loadNextImage(this)">
+            </div>
+            
+            <div id="turn06">
+                <img src="img/pitanje.png" id="t6e1" onclick="loadNextImage(this)">
+                <img src="img/pitanje.png" id="t6e2" onclick="loadNextImage(this)">
+                <img src="img/pitanje.png" id="t6e3" onclick="loadNextImage(this)">
+                <img src="img/pitanje.png" id="t6e4" onclick="loadNextImage(this)">
+            </div>
+
+            <button id="predlog-resenja" onclick="submitCombination()">Potvrdi</button>
+            <button id="restart" onclick="window.location.reload(false)">Restart</button>
+            <button id="prikazi-resenje" onclick="showSolution()">Prikazi resenje</button>
+            
+
+            <div style="margin-top: 75px;" id="solution">
+                <img src="img/pitanje.png" id="s1">
+                <img src="img/pitanje.png" id="s2">
+                <img src="img/pitanje.png" id="s3">
+                <img src="img/pitanje.png" id="s4">
+            </div>
+            <p id="msg"></p>
+        </div>
+        
+    </body>
+</html>
